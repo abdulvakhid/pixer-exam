@@ -1,5 +1,12 @@
 /*
 * Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.12,
 * Autoprefixer: v10.4.4
 * Browsers: last 4 version
@@ -170,7 +177,7 @@ body {
 }
 
 .tel:active {
-    border: none;
+   border: transparent;
     color: #ffffff;
     background-color: #00bafc99;
 }
@@ -231,7 +238,7 @@ body {
 }
 
 .btn:active {
-    border: none;
+    border: transparent;
     background-color: rgba(0, 186, 252, 0.6);
 }
 
@@ -814,12 +821,16 @@ margin-left: 100px;
 }
 
 
+
 .network-list {
+    position: relative;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .network-item {
+    margin-left: 25px;
     margin-bottom: 8px;
 
     font-family: var(--main-font-family);
@@ -830,7 +841,7 @@ margin-left: 100px;
 }
 
 .network-link {
-    margin-left: 28px;
+
     color: var(--footer-text-color);
     text-decoration: none;
 }
@@ -846,36 +857,40 @@ margin-left: 100px;
 
 
 .telegram::before{
+    position: absolute;
+    left: -1px;
     display: block;
     content: "";
     background-image: url("../images/telegram.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: 15px;
     width: 22px;
     height: 22px;
 }
 
 
 .facebook::before{
+    position: absolute;
+    left: -1px;
     display: block;
     content: "";
     background-image: url("../images/facebook.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: 15px;
     width: 22px;
     height: 22px;
 
 }
 
 .instagram::before{
+    position: absolute;
+    left: -1px;
     display: block;
     content: "";
     background-image: url("../images/instagram.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: 15px;
+
     width: 22px;
     height: 22px;
 
