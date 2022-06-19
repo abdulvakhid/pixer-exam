@@ -73,7 +73,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 8px 0;
     background: var(--footer-text-color);
 
 }
@@ -144,6 +143,7 @@ body {
 }
 
 .nav-list-item:active {
+    color: #ffffff;
     background-color: #191919b3;
 
 }
@@ -170,6 +170,7 @@ body {
 }
 
 .tel:active {
+    border: none;
     color: #ffffff;
     background-color: #00bafc99;
 }
@@ -230,11 +231,13 @@ body {
 }
 
 .btn:active {
+    border: none;
     background-color: rgba(0, 186, 252, 0.6);
 }
 
 
 .link-youtube {
+    border: none;
     border-radius: 5px;
 }
 
@@ -623,6 +626,7 @@ body {
     padding: 16px 0 16px 16px;
     background: #F3F3F3;
     border-radius: 5px;
+    border: none;
 }
 
 .form-input::-webkit-input-placeholder {
@@ -671,6 +675,7 @@ body {
     padding: 16px 0 16px 16px;
     background: #F3F3F3;
     border-radius: 5px;
+    border: none;
 }
 
 .form-choose::-webkit-input-placeholder {
@@ -743,9 +748,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
 }
 
 .info-site {
@@ -772,6 +774,11 @@ body {
     color: var(--footer-text-color);
 }
 
+
+.about{
+margin-right: 87px;
+margin-left: 100px;
+}
 
 .pages-list {
     margin: 0;
@@ -838,7 +845,7 @@ body {
 }
 
 
-.telegram {
+.telegram::before{
     display: block;
     content: "";
     background-image: url("../images/telegram.svg");
@@ -850,7 +857,7 @@ body {
 }
 
 
-.facebook {
+.facebook::before{
     display: block;
     content: "";
     background-image: url("../images/facebook.svg");
@@ -862,7 +869,7 @@ body {
 
 }
 
-.instagram {
+.instagram::before{
     display: block;
     content: "";
     background-image: url("../images/instagram.svg");
