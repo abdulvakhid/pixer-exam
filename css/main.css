@@ -115,6 +115,7 @@ body {
 
 .nav-list {
     margin: 0;
+    margin-right: 8px;
     border-bottom: 3px solid transparent;
 }
 
@@ -132,24 +133,27 @@ body {
             order: 0;
     -ms-flex-positive: 0;
         flex-grow: 0;
-    padding: 16px;
+  
     border-bottom: 3px solid transparent;
 }
 
 
 
 .item-link {
+    padding: 16px;
     color: var(--main-text-color);
     text-decoration: none;
 
 }
 
 
-.nav-list-item:hover {
+
+
+.item-link:hover {
     border-bottom: 3px solid #191919;
 }
 
-.nav-list-item:active {
+.item-link:active {
     color: #ffffff;
     background-color: #191919b3;
 
@@ -177,9 +181,10 @@ body {
 }
 
 .tel:active {
-   border: transparent;
+ 
     color: #ffffff;
     background-color: #00bafc99;
+    border-color: transparent;
 }
 
 
@@ -238,8 +243,8 @@ body {
 }
 
 .btn:active {
-    border: transparent;
     background-color: rgba(0, 186, 252, 0.6);
+    border-color: transparent;
 }
 
 
@@ -830,7 +835,7 @@ margin-left: 100px;
 }
 
 .network-item {
-    margin-left: 25px;
+    margin-left: 30px;
     margin-bottom: 8px;
 
     font-family: var(--main-font-family);
